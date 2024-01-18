@@ -1,0 +1,35 @@
+.content-container {
+    background: #09f;
+    display: grid;
+    grid-template-areas: "content";
+    justify-content: center;
+    min-height: 100vh;
+    margin: 30px;
+    border-radius: 12px;
+    padding-top: 15px;
+}
+
+
+table .mat-table {
+    background: #09f;
+    grid-area: content;
+    padding: 50px;
+}
+
+#table-todos {
+    width: 800px;
+    height: 500px;
+}
+
+.example-card {
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#emojis {
+    font-size: 64px;
+    margin: 32px;
+}

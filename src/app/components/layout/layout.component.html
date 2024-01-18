@@ -1,0 +1,18 @@
+<ul>
+    <li>
+        <a mat-flat-button routerLink="tasksList" >Todas las tareas</a>
+    </li>
+    <li>
+        <a mat-flat-button routerLink="tasksList" >Completadas</a> 
+    </li>
+    <li>
+        <a mat-flat-button routerLink="./" >ir a home</a> 
+    </li>
+    <li>
+        <input type="User ID" [(ngModel)]="userId">
+        <a mat-flat-button routerLink="tasksById/{{ userId }}" >Buscar por ID {{userId}} </a> 
+    </li>
+    
+</ul>
+
+<router-outlet></router-outlet>

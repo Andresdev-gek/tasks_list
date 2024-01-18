@@ -12,11 +12,16 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { LayoutComponent } from './components/layout/layout.component';
+import { TasksByIdComponent } from './pages/tasks-by-id/tasks-by-id.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TasksTableComponent
+    TasksTableComponent,
+    LayoutComponent,
+    TasksByIdComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     HttpClientModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
